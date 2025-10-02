@@ -78,8 +78,16 @@
       <ul id="cart-items"></ul>
       <div class="cart-footer">
         <p>Total: <strong id="cart-total">₦0</strong></p>
-        <input id="customer-email" type="email" placeholder="Your email (for receipt)" />
-        <button id="pay-btn">Place Your Order / Pay</button>
+        <form>
+  <label for="name">Your Name:</label>
+  <input type="text" id="name" name="name"><br><br>
+  <label for="email">Your Email:</label>
+  <input type="email" id="email" name="email"><br><br>
+  <label for="message">Your Message:</label>
+  <textarea id="message" name="message"></textarea><br><br>
+  <input type="submit" value="Send Your Message">
+</form>
+
       </div>
     </aside>
 
