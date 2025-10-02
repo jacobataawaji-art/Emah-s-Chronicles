@@ -1,0 +1,28 @@
+:root{
+  --blood: #8b0000; /* deep blood-like red */
+  --bg: #fffafa;
+  --muted: #444;
+}
+*{box-sizing:border-box}
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto, 'Helvetica Neue', Arial;margin:0;background:var(--bg);color:var(--muted)}
+.site-header{display:flex;justify-content:space-between;align-items:center;padding:1rem 2rem;background:linear-gradient(90deg,var(--blood),#5a0000);color:#fff}
+.brand{display:flex;gap:1rem;align-items:center}
+.logo{width:48px;height:48px;object-fit:cover;border-radius:8px;background:#fff}
+.main-nav a{color:#fff;text-decoration:none;margin-left:1rem;font-weight:600}
+.hero{padding:2rem;text-align:center}
+.menu{padding:1rem 2rem}
+.menu-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem}
+.menu-item{background:#fff;border-radius:10px;padding:1rem;box-shadow:0 6px 18px rgba(0,0,0,0.06)}
+.menu-item h3{margin:0 0.4rem;font-size:1.1rem}
+.controls{display:flex;justify-content:space-between;align-items:center;margin-top:0.8rem}
+.add-btn{padding:0.4rem 0.7rem;border-radius:8px;border:2px solid var(--blood);background:transparent;color:var(--blood);cursor:pointer;font-weight:700}
+.add-btn:hover{background:var(--blood);color:#fff}
+.price{font-weight:700}
+.cart{position:fixed;right:1rem;top:6rem;width:300px;background:#fff;padding:1rem;border-radius:12px;box-shadow:0 12px 30px rgba(0,0,0,0.12)}
+.cart h3{margin:0 0 0.5rem 0}
+.cart-footer{margin-top:0.6rem}
+#customer-email{width:100%;padding:0.5rem;border-radius:6px;border:1px solid #ddd;margin:0.5rem 0}
+#pay-btn{width:100%;padding:0.6rem;border-radius:8px;border:0;background:var(--blood);color:#fff;font-weight:700;cursor:pointer}
+.info{padding:1rem 2rem}
+footer{padding:1rem;text-align:center;color:#666}
+@media(max-width:800px){.cart{position:static;width:auto;margin:1rem}}

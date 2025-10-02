@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Emah's Chronicles</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <img src="logo.png" alt="Emah's Chronicles logo" class="logo"/>
+      <h2>Emah's Chronicles</h2>
+    </div>
+
+    <nav class="main-nav">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <h2>Fresh. Tasty. Always.</h2>
+      <p>Indoor & outdoor catering. Choose from our menu and place your order.</p>
+    </section>
+
+    <section id="menu" class="menu">
+      <h2>Food Menu</h2>
+      <div class="menu-grid">
+        <!-- Each card has a data-price attribute for JS cart calculations -->
+        <article class="menu-item" data-name="Fried Rice & Chicken" data-price="2500">
+          <h3>Fried Rice & Chicken</h3>
+          <img src="Chicken.jpeg" alt="Chicken">
+          <p>Portion with tender chicken and mixed veggies.</p>
+          <div class="controls">
+            <button class="add-btn">Add to Cart</button>
+            <span class="price">₦2,500</span>
+          </div>
+        </article>
+
+        <article class="menu-item" data-name="Afan Soup" data-price="1500">
+          <h3>Afan Soup</h3>
+          <img src="Afan.jpeg" alt="Afan">
+          <p>Traditional Afan soup, rich and flavorful.</p>
+          <div class="controls">
+            <button class="add-btn">Add to Cart</button>
+            <span class="price">₦1,500</span>
+          </div>
+        </article>
+
+        <article class="menu-item" data-name="Eguis Soup" data-price="1400">
+          <h3>Eguis Soup</h3>
+          <img src="Egusi.jpeg" alt="">
+          <p>Hearty Eguis soup served with your choice of side.</p>
+          <div class="controls">
+            <button class="add-btn">Add to Cart</button>
+            <span class="price">₦1,400</span>
+          </div>
+        </article>
+
+        <article class="menu-item" data-name="Fisherman Soup" data-price="2000">
+          <h3>Fisherman Soup</h3>
+          <img src="Fisherman.jpeg" alt="fisherman soup">
+          <p>Seafood-rich fisherman soup — a coastal favorite.</p>
+          <div class="controls">
+            <button class="add-btn">Add to Cart</button>
+            <span class="price">₦2,000</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <aside class="cart" id="cart">
+      <h3>Your Order</h3>
+      <ul id="cart-items"></ul>
+      <div class="cart-footer">
+        <p>Total: <strong id="cart-total">₦0</strong></p>
+        <input id="customer-email" type="email" placeholder="Your email (for receipt)" />
+        <button id="pay-btn">Place Your Order / Pay</button>
+      </div>
+    </aside>
+
+    <section id="services" class="info">
+      <h2>Services</h2>
+      <p>Indoor and outdoor catering for events, parties, and corporate gatherings.</p>
+    </section>
+
+    <section id="about" class="info">
+      <h2>About</h2>
+      <p>Emah's Chronicles - serving delicious home-style meals in Uyo & Port Harcourt.</p>
+    </section>
+
+    <section id="contact" class="info">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:orders@emahschronicles.com">Jacobawajiimam4@gmail.com</a></p>
+      <p>Locations: Uyo & Port Harcourt</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Emah's Chronicles</p>
+  </footer>
+
+  <!-- Paystack inline JS (we used Paystack as you typed "pack stack") -->
+  <script src="https://js.paystack.co/v1/inline.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
